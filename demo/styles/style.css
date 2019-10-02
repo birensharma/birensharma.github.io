@@ -18,7 +18,7 @@ img{
 }
 .card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px 10px rgba(0,0,0,0.2);
 }
 .card:hover .card-button{
     display: block;
@@ -27,9 +27,9 @@ img{
 .card:hover .mask{
     background: rgba(0,0,0,0.7)
 }
-.card:hover img{
+/* .card:hover img{
    transform: scale(1.05)
-}
+} */
 .absolute-fill{
     position: absolute;
     top:0;
@@ -81,4 +81,127 @@ footer p{
 }
 .toast{
 z-index: 200;
+}
+
+.profile-header{
+    padding: 20px 25px;
+    /* border-bottom: 1px solid rgba(0,0,0,0.2) */
+}
+
+.profile-header span{
+    font-size: 25px;
+    margin: 0 0 0 50px ;
+}
+.pic-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.pic-section .name{
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-top: 20px */
+}
+ion-icon{
+    margin-right: 5px
+}
+.pic-section span{
+color:#2196f3;
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+.pic-section .member{
+padding:10px 20px;
+/* border:1px solid #000; */
+background: #2979ff;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+/* border:5px solid #fff */
+}
+.pic-section .member span{
+    margin: 10px 0;
+   color: #fff;
+   display:inline-flex;
+   align-items: center;
+   /* justify-content: center; */
+}
+.pic-section .member span p{
+    margin: 0;
+    font-size: 13px
+ }
+ .pic-section .member span p:nth-child(3){
+    font-weight: bold;
+    margin-left: 10px
+ }
+
+.pic{
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 80px;
+    background: url("../images/profile.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 10px 20px 1px rgba(0,0,0,0.3);
+    border: 2px solid #999
+    /* background: #000         */
+}
+.about{
+    border:1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    display: block
+}
+.about .title{
+    font-size: 20px;
+    /* color:rgba(0,0,0,0.7); */
+    align-items: center;
+    display: flex;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding:5px ;
+    margin-bottom:20px 
+}
+.about .details{
+    display: flex;
+    flex-direction: column;
+}
+.about .details:first-child{
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.about .details span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between
+}
+.about .details span p:first-child{
+font-weight: 100 
+}
+.about .details span p{
+    font-weight: 600; 
+    font-size: 15px
+}
+
+
+@media only screen and (max-width:500px){
+    .card{
+        max-height: 40vh;
+        transition: 0.3s;
+        min-height: 25vh;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+        margin: 5px 0px;
+    }
+    .card .title{
+        font-size: 3vh;
+       }
+       .card .card-button{
+        padding:2px 20px;
+        border: 2px solid #fff;
+        font-size: 13px
+    }
 }
