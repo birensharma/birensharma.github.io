@@ -136,3 +136,18 @@
 		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
 			background-color: #c0392b !important;
 		}
+		.g-fixed{
+			display: none;
+			color: #fff;
+			position: fixed;
+			font-size: 20px;
+			bottom: 5%;
+			right:5%;
+			cursor: pointer;
+			padding: 10px 15px;
+			transition: 0.2s;
+			border-radius: 3px;
+		}
+		.g-fixed:hover{
+			background:rgba(0, 0, 0, 0.4) ;
+		}

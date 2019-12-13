@@ -7,7 +7,7 @@
 
 html {
 	height: 100%;
-	background: #d50000;
+	background: #c0392b;
 }
 
 body {
@@ -144,3 +144,21 @@ img{
   text-align: left;
   margin-bottom: .5em;
 }
+.timer{
+	position: fixed;
+	top:0;
+	height: 10%;
+	width: 40px;
+	right: 10%;
+	/* box-sizing: border-box; */
+	padding: 20px;
+	background-color: #ffd600;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 30px;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+/****************
