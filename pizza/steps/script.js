@@ -46,7 +46,7 @@ function goNext() {
 	});
 }
 function start() {
-	if (currentIndex == 5) return
+	if (currentIndex == 6) return
 	setTimeout(() => {
 		goNext()
 		clearInterval()
