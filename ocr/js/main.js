@@ -198,8 +198,7 @@
         $('blockquote footer').text('');
 
         // do the OCR!
-        Tesseract.recognize(ctx,{
-            lang: 'ja'}).then(function (result) {
+        Tesseract.recognize(ctx).then(function (result) {
             var resultText = result.text ? result.text.trim() : '';
 
             //show the result
