@@ -45,7 +45,7 @@
                 });
 
                 if (rearCameraIds.length) {
-                    deferred.resolve(rearCameraIds[1]);
+                    deferred.resolve(rearCameraIds[0]);
                 } else {
                     deferred.resolve(null);
                 }
@@ -71,9 +71,9 @@
                 ]
             }
         };
-        //if (rearCameraId)
+
         //if rear camera is available - use it
-        if (1) {
+        if (rearCameraId) {
             videoSettings.video.optional.push({
                 sourceId: rearCameraId
             });
@@ -198,7 +198,8 @@
         $('blockquote footer').text('');
 
         // do the OCR!
-        Tesseract.recognize(ctx).then(function (result) {
+        Tesseract.recognize(ctx,{
+            lang: 'ja'}).then(function (result) {
             var resultText = result.text ? result.text.trim() : '';
 
             //show the result
