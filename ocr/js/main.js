@@ -45,7 +45,7 @@
                 });
 
                 if (rearCameraIds.length) {
-                    deferred.resolve(rearCameraIds[0]);
+                    deferred.resolve(rearCameraIds[1]);
                 } else {
                     deferred.resolve(null);
                 }
@@ -71,9 +71,9 @@
                 ]
             }
         };
-
+        //if (rearCameraId)
         //if rear camera is available - use it
-        if (rearCameraId) {
+        if (1) {
             videoSettings.video.optional.push({
                 sourceId: rearCameraId
             });
