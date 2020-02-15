@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    .header{
+ margin-top: 2%;
+ margin-bottom: 2%;
+ height: 40px;
+ /* background:#00B9F1; */
+ background:#ffa726;
+}
+.footer{
+    /* background-color: #00B9F1; */
+    background: #ffa726;
+    height: 70px;
+    text-align: center;
+    padding-top: 7px;
+     }
+
+body{
+    background:#eee;
+}
+.message{
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.logo{
+    text-align: center;
+    background: #ddd;
+}
+.logo > img{
+  width: 300px;
+  height: 50px;
+  align-self: center;
+}
+.main{
+background: #fff;
+border-radius: 5px;
+}
+.coupon{
+    border: 1px #000;
+    border-style: dashed;
+    text-align: center;
+    border-radius: 3px;
+    width:auto;
+    font-weight:bolder;
+    padding: 5px;
+
+}
+.middle{
+  padding: 5px;
+  margin-bottom:  10px;
+
+}
+.item > img{
+    border-radius: 10px;
+}
+  </style>
+  <body>
+    <div class="container main">
+
+       <div class="header"></div>
+       <div class="logo"><img src="https://karatekitchen.in/assets/images/logo/logo-light.png" /></div>
+       <br>
+       <div class="row">
+        <div class="col-sm-2"></div>
+       <div class="message col-sm-6">
+           <p>Hi Test!</p>
+
+        <p>Hurray! We have received your order. We know you are excited to get your hands on them. It will be delivered shortly.</p>
+        <p>Thank you for your orders.</p>
+       <p> Karate Kitchen.</p>
+        </div>
+        <div class="col-sm-2 item"><img src="https://karatekitchen.in/assets/images/karate-img-menu1.jpg" height="150px"/></div>
+        <div class="col-sm-2"></div>
+        </div>
+        <div class="row middle">
+            <div class=" col-sm-2"></div>
+          <div class=" col-sm-2">
+            <p>Grab your offer on next order: <br><br><span class="coupon">COUPON : 25OFF</span></p>
+          </div>
+          <div class="col-sm-3">
+            <h5>Delivery Address</h5>
+             21, Second Floor<br>
+             Navjeevan Vihar <br>
+             11007<br>
+             Malviya Nagar<br>
+           
+          </div>
+          <div class="col-sm-3">
+            <h5>Outlet Info</h5>
+            Order id : 019229293<br>
+            Time : 12.30 PM /12-02-2020<br>
+            Payment Mode : Online<br>
+            Transaction ID : 123434343
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+        
+        <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8"> <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Items</th>
+              <th scope="col">Variant</th>
+              <th scope="col">QTY</th>
+              <th scope="col">Price</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>VEG HOT & SOUR </td>
+              <td>N/A</td>
+              <td>1</td>
+              <td> ₹. 230</td>
+             
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>VEG HOT & SOUR </td>
+              <td>N/A</td>
+              <td>2</td>
+              <td> ₹. 345</td>
+             
+              
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>VEG HOT & SOUR </td>
+                <td>N/A</td>
+                <td>2</td>
+                <td> ₹. 345</td>
+               
+                
+              </tr>
+            <tr>
+              <th scope="row"></th>
+              <td> </td>
+              <td></td>
+              <th>Discount:</th>
+              <td> ₹. 245</td>
+              
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <th>SGST:</th>
+                <td> ₹. 15</td>
+                
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <th>CGST:</th>
+                <td> ₹. 15</td>
+                
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <th>Total:</th>
+                <td> ₹. 1500</td>
+                
+              </tr>
+            
+          </tbody>
+        </table></div>
+      <div class="col-sm-2"></div>
+        </div>
+      </div>
+
+<div class="footer"> &copy; Karate Kitchen<br>
+  3rd Floor, White Building, Sector 21, Malviya Nagar Road, Delhi - 122002 - INDIA</div>
+  </body>
+</html>
